@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./list-products.component.css'],
 })
 export class ListProductsComponent implements OnInit {
-  trainingLeagues: any[] = [];
+  trainingLeagues: any[] = [2,2];
 
   constructor(
     private router: Router
