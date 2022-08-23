@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+/*import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';*/
+import { faker } from '@faker-js/faker';
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +11,10 @@ export class NavbarComponent implements OnInit {
 	showMenu: boolean = false;
 	showOptionsUser: boolean = false;
 
-	user: any;
-
+	userImg = faker.image.avatar();
+    userName = faker.name.fullName();
+  	userEmail = faker.internet.email();	
+	
 	constructor() {}
 
 	ngOnInit(): void {

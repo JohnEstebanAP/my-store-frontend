@@ -25,7 +25,7 @@
                     (click)="openOptionsUser()"
                      >
                     <span class="sr-only">Open user menu</span>
-                    <img class="h-8 w-8 rounded-full" src="https://lh3.googleusercontent.com/a/AItbvmlziRat86DmK33VF_6wug-G0y8YIYYcZnBXowE_Kw=s96-c" alt="">
+                    <img class="h-8 w-8 rounded-full" [src]="userImg" alt="">
                   </button>
                 </div>
                 
@@ -37,8 +37,8 @@
                   *ngIf="showOptionsUser == true">
                   <!-- Active: "bg-gray-100", Not Active: "" -->
                   <div class="ml-3">
-                    <div class="block px-4 text-sm font-medium">John Esteban Alvarez Piedrahita</div>
-                    <div class="block px-4 text-sm font-medium text-gray-400">john.alvarez@sofka.com.co</div>
+                    <div class="block px-4 text-sm font-medium">{{userName}}</div>
+                    <div class="block px-4 text-sm font-medium text-gray-400">{{userEmail}}</div>
                   </div>
                   <a class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
   
@@ -96,11 +96,11 @@
         <div class="pt-4 pb-3 border-t border-gray-700">
           <div class="flex items-center px-5">
             <div class="flex-shrink-0">
-              <img class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/a/AItbvmlziRat86DmK33VF_6wug-G0y8YIYYcZnBXowE_Kw=s96-c"  alt="">
+              <img class="h-10 w-10 rounded-full" [src]="userImg"  alt="">
             </div>
             <div class="ml-3">
-              <div class="text-base font-medium leading-none text-white">Hola Jonh Esteban</div>
-              <div class="text-sm font-medium leading-none text-gray-400">john.alvarez@sofka.com.co</div>
+              <div class="text-base font-medium leading-none text-white">{{userName}}</div>
+              <div class="text-sm font-medium leading-none text-gray-400">{{userEmail}}</div>
             </div>
             <button type="button" class="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
               <span class="sr-only">View notifications</span>

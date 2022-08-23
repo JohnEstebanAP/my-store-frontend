@@ -7,18 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./list-products.component.css'],
 })
 export class ListProductsComponent implements OnInit {
-  trainingLeagues: any[] = [2,2];
-
-  constructor(
-    private router: Router
-  ) {}
+  trainingLeagues: any[] = [2, 2];
+  database = { products: [] };
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.addTrainingLeagues();
   }
 
   addTrainingLeagues() {
-   /* this.trainingLeagueApiService
+    /* this.trainingLeagueApiService
       .getTrainingLeague()
       .subscribe((trainingLeague) => (this.trainingLeagues = trainingLeague));*/
   }
