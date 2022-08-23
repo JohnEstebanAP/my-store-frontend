@@ -112,12 +112,16 @@
    }
    
    @media(min-width: 1096px){
-   
-     .blockquote_card{
+    .blockquote_card{
        display: grid;
        height: 25rem;
      }
    }
    
-   
+   @media(min-width: 1536px){
+    .container-products{
+        margin-left: 6rem/* 80px */;
+        margin-right: 6rem/* 80px */;
+    }
+  }
    
