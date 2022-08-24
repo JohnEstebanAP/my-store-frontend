@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from '../service/interface/product';
 import { ProductsFoodApiService } from '../service/products-food/products-food-api.service';
+import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-list-products-food',
   templateUrl: './list-products-food.component.html',
@@ -25,8 +27,11 @@ export class ListProductsFoodComponent implements OnInit {
 
   startButton($event: any) {
     const element = $event.target.id;
-    localStorage.setItem('idTraining', JSON.stringify(element));
-    this.router.navigate(['list/registro-postulation']);
+    Swal.fire({
+      icon: "success",
+      title: "Purchase of the product reference code: " +element,
+      text: "Congratulations the product has been added to your shopping cart!",
+    })
   }
 
 }
