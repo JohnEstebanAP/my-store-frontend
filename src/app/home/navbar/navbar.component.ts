@@ -31,7 +31,6 @@ export class NavbarComponent implements OnInit {
 	}
 
 	startPageFashion(){
-		console.log("Start hola");
 		this.router.navigate(['home/fashion']);
 	}
 

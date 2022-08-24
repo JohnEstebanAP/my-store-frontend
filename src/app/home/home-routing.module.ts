@@ -6,11 +6,11 @@ import { ListProductsFoodComponent } from './list-products-food/list-products-fo
 
 
 const routes: Routes = [
-  /*{
+  {
     path: '',
     redirectTo: "fashion",
     pathMatch: "full"
-  },*/
+  },
   {
     path: "",
     children: [

@@ -6,10 +6,11 @@ import { catchError, tap } from 'rxjs/operators';
 import { Product } from '../interface/product';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
-export class ProductsFashionApiService {
-  private REST_API_SERVER = 'http://localhost:3000/productsFashion';
+export class ProductsCatsApiService {
+
+  private REST_API_SERVER = 'http://localhost:3000/productsCats';
 
   constructor(public httpClient: HttpClient) {}
 
