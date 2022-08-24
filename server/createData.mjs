@@ -2,9 +2,9 @@ import { faker } from "@faker-js/faker";
 
 const database = { productsFashion: [],  productsCats: [],  productsFood: [], };
 
-for (let index = 1; index < 26; index++) {
+for (let index = 0; index < 26; index++) {
   database.productsFashion.push({
-    id: ""+index,
+    id: index,
     name: faker.commerce.productName(),
     description: faker.commerce.productDescription(),
     price: faker.commerce.price(100, 200, 0, "$"),
@@ -18,7 +18,7 @@ for (let index = 1; index < 26; index++) {
 }
 for (let index = 26; index < 51; index++) {
   database.productsCats.push({
-    id: ""+index,
+    id: index,
     name: faker.animal.cat(),
     description: faker.commerce.productDescription(),
     price: faker.commerce.price(100, 200, 0, "$"),
@@ -32,7 +32,7 @@ for (let index = 26; index < 51; index++) {
 }
 for (let index = 51; index < 76; index++) {
   database.productsFood.push({
-    id: ""+index,
+    id: index,
     name: faker.commerce.productName(),
     description: faker.commerce.productDescription(),
     price: faker.commerce.price(100, 200, 0, "$"),

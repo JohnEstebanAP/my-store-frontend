@@ -7,13 +7,15 @@ import { HomeRoutingModule } from './home-routing.module';
 import { ListProductsCatsComponent } from './list-products-cats/list-products-cats.component';
 import { ListProductsFoodComponent } from './list-products-food/list-products-food.component';
 import { ListProductsFashionComponent } from './list-products-fashion/list-products-fashion.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     ListProductsCatsComponent,
     ListProductsFoodComponent,
-    ListProductsFashionComponent
+    ListProductsFashionComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,   
@@ -22,6 +24,7 @@ import { ListProductsFashionComponent } from './list-products-fashion/list-produ
   ],
   exports: [
     NavbarComponent,
+    CarouselComponent
   ]
 })
 export class HomeModule { }
